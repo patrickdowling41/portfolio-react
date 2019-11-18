@@ -1,0 +1,15 @@
+.nav-initial {
+    display: flexbox;
+    height: 20vh;
+    background-color: blue;
+}
+
+.nav-transparent {
+    display: flexbox;
+    height: 20vh;
+    background-color: green;
+}
+
+.nav-invisible {
+    display: none;
+}
