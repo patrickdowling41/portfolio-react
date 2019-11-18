@@ -6,9 +6,9 @@ import Footer from './components/footer/Footer'
 
 // This class is responsible for containing all other components.
 class App extends Component {
-    constructor()
+    constructor(props)
     {
-
+        super(props)
     }
 
     render() {
