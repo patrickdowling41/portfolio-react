@@ -1,0 +1,26 @@
+$navColour: black;
+$navHeight: 20vh;
+
+.nav-initial {
+    display: block;
+    height: $navHeight;
+    background-color: black;
+}
+
+// This is the nav used 
+.nav-transparent {
+    display: flexbox;
+    height: $navHeight;
+    background-color: $navColour;
+
+}
+
+// Used to remove the nav when user has scrolled down
+.nav-invisible {
+    display: none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+}

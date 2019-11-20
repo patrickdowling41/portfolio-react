@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import '../../styles/nav.css'
+import '../../styles/nav.scss'
 
 class Nav extends Component {
 
@@ -9,7 +9,7 @@ class Nav extends Component {
         this.state = {
             scrollHeight: 0,
             /* nav state options:
-            ** initial (the standard nav that appears atop the page)
+            ** '' (the standard nav that appears atop the page)
             ** transparent (when user is scrolling up from down the page)
             ** invisible */
             navState: 'initial'
@@ -27,7 +27,7 @@ class Nav extends Component {
             console.log("after  " + window.scrollY)
 
         // Used to determine when initial page has been scrolled past.
-        if (window.scrollY > 150) {
+        if (window.scrollY > 175) {
             // Used to work out if the user scrolled up or down.
             
 
@@ -69,7 +69,7 @@ class Nav extends Component {
     render() {
         return (
             <div className="container">
-                <div className={"nav-" + this.state.navState}/>
+                <div className={"sticky nav-" + this.state.navState}/>
             </div>
         )
     }
