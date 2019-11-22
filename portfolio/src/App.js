@@ -3,7 +3,7 @@ import Nav from './components/nav/Nav'
 import Home from './components/home/Home'
 import Projects from './components/projects/Projects'
 import Footer from './components/footer/Footer'
-import './styles/app.css'
+import './styles/app.scss'
 
 // This class is responsible for containing all other components.
 class App extends Component {
@@ -16,12 +16,15 @@ class App extends Component {
         return (
             <div className="container">
                 <div className="nav-container">
-                    <Nav>
-                    </Nav>
+                <Nav></Nav>
                 </div>
-                <div className="home-container">
-                    <Home></Home>
+                <div className="row">
+                    <div className="home-container">
+                        <Home></Home>
+                    </div>
                 </div>
+                
+                
                 <div className="projects-container">
                     <Projects></Projects>
                 </div>

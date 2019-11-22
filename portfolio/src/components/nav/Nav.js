@@ -29,21 +29,12 @@ class Nav extends Component {
         // Used to determine when initial page has been scrolled past.
         if (window.scrollY > 175) {
             // Used to work out if the user scrolled up or down.
-            
+            this.setState({navState: "retracted"})
 
-            if (window.scrollY > this.state.scrollHeight)
-            {
-                this.setState({navState: "invisible"})
-            }
-            else
-            {
-                // Show transparent nav when user scrolls up.
-                this.setState({navState: "transparent"})
-            }
         }
         else
         {
-            this.setState({navState: "initial"})
+            this.setState({navState: "top"})
         }
         this.setState({
             scrollHeight: window.scrollY
@@ -69,7 +60,7 @@ class Nav extends Component {
     render() {
         return (
             <div className="container">
-                <div className={"sticky nav-" + this.state.navState}/>
+                <div className={"nav-" + this.state.navState}/>
             </div>
         )
     }

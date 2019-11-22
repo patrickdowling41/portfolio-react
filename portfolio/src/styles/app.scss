@@ -1,0 +1,13 @@
+$pageHeight: 500vh;
+$componentHeight: 100vh;
+
+.container {
+    min-height: $pageHeight;
+}
+
+.home-container
+{
+    min-height: 100vh;
+    background-image: url('/images/landscape-4615578_1920.jpg');
+    display: flexbox;
+}

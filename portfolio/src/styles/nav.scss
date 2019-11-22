@@ -1,26 +1,16 @@
-$navColour: black;
+$navColour: #201e1e;
 $navHeight: 20vh;
 
-.nav-initial {
-    display: block;
-    height: $navHeight;
-    background-color: black;
+.nav-top {
+    height: 20vh;
 }
 
-// This is the nav used 
-.nav-transparent {
-    display: flexbox;
-    height: $navHeight;
+// This is the nav used when user scrolls up from anywhere below the top of the screen.
+.nav-retracted {
+    height: 5vh;
     background-color: $navColour;
-
-}
-
-// Used to remove the nav when user has scrolled down
-.nav-invisible {
-    display: none;
-}
-
-.sticky{
     position: fixed;
     top: 0;
+    width: 100%;
+    opacity: 0.9;
 }
