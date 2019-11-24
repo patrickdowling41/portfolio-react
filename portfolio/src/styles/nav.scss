@@ -1,16 +1,27 @@
-$navColour: #201e1e;
+$navColour: black;
 $navHeight: 20vh;
 
 .nav-top {
-    height: 20vh;
+    position: absolute;
+    height: 50vh;
 }
 
 // This is the nav used when user scrolls up from anywhere below the top of the screen.
-.nav-retracted {
+.nav-scrolled {
     height: 5vh;
     background-color: $navColour;
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: .95;
+}
+
+.container-selected{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav-container
+{
+    display: inline-flex;
 }

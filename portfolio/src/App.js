@@ -14,16 +14,13 @@ class App extends Component {
 
     render() {
         return (
-            <div className="container">
+            <>
                 <div className="nav-container">
-                <Nav></Nav>
+                    <Nav/>
                 </div>
-                <div className="row">
-                    <div className="home-container">
-                        <Home></Home>
-                    </div>
+                <div className="home-container">
+                    <Home></Home>
                 </div>
-                
                 
                 <div className="projects-container">
                     <Projects></Projects>
@@ -31,7 +28,7 @@ class App extends Component {
                 <div className="footer-container">
                     <Footer></Footer>
                 </div>
-            </div>
+            </>
         )
     }
 }
