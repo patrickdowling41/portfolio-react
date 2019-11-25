@@ -5,6 +5,7 @@ import Projects from './components/projects/Projects'
 import Footer from './components/footer/Footer'
 import './styles/app.scss'
 
+
 // This class is responsible for containing all other components.
 class App extends Component {
     constructor()

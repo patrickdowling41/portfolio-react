@@ -24,7 +24,7 @@ class Nav extends Component {
     setNav()
     {
         // Used to determine when initial page has been scrolled past.
-        if (window.scrollY > 175) {
+        if (window.scrollY > 70) {
             // Used to work out if the user scrolled up or down.
             this.setState({navState: "scrolled"})
         }

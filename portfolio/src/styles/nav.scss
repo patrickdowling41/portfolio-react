@@ -1,4 +1,4 @@
-$navColour: black;
+$navColour: #333333; 
 $navHeight: 20vh;
 
 * {
@@ -17,13 +17,13 @@ $navHeight: 20vh;
 
 // This is the nav used when user scrolls up from anywhere below the top of the screen.
 .nav-scrolled {
-    height: 5vh;
-    background-color: $navColour; 
+    transition-duration: 0.5s;
+    background-color: $navColour;
     position: fixed;
     display: flex;
     top: 0;
     width: 100%;
-    opacity: .95;
+    padding: 1% 0 1% 0;
 }
 
 .container-selected {
@@ -51,7 +51,7 @@ ul {
         color: white;
     }
     a:hover{
-        color: green;
-        transition-duration: 0.5s
+        color: rgb(30, 31, 30);
+        transition-duration: 0.2s
     }
 }
