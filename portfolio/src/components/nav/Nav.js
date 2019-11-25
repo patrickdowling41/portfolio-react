@@ -61,15 +61,23 @@ class Nav extends Component {
         return (
             <div className="container">
                 <div className={"nav-" + this.state.navState}>
-                    <div className={"nav-container " + `${this.state.selectedValue === "about-me" ? "selected" : "not-selected"}`}>
-                        <ul><a href="#">About me</a></ul>
+
+                    <div className="image-container">
+
                     </div>
-                    <div className={"nav-container " + `${this.state.selectedValue === "projects" ? "selected" : "not-selected"}`}>
-                        <ul><a href="#">Projects</a></ul>
+
+                    <div className="links-container">
+                        <div className={"nav-container " + `${this.state.selectedValue === "about-me" ? "selected" : "not-selected"}`}>
+                            <ul><a href="#">About me</a></ul>
+                        </div>
+                        <div className={"nav-container " + `${this.state.selectedValue === "projects" ? "selected" : "not-selected"}`}>
+                            <ul><a href="#">Projects</a></ul>
+                        </div>
+                        <div className={"nav-container " + `${this.state.selectedValue === "contact-me" ? "selected" : "not-selected"}`}>
+                            <ul><a href="#">Contact me</a></ul>
+                        </div>
                     </div>
-                    <div className={"nav-container " + `${this.state.selectedValue === "contact-me" ? "selected" : "not-selected"}`}>
-                        <ul><a href="#">Contact me</a></ul>
-                    </div>
+                    
                 </div>
             </div>
         )
