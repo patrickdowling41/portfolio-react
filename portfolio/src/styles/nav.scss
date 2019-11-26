@@ -10,9 +10,8 @@ $navHeight: 20vh;
 .nav-top {
     display: flex;
     position: absolute;
-    justify-content: space-between;
     width: 100%;
-    padding-top: 2%;
+    padding: 2% 40% 0 40%;    
 }
 
 // This is the nav used when user scrolls up from anywhere below the top of the screen.
@@ -21,9 +20,9 @@ $navHeight: 20vh;
     background-color: $navColour;
     position: fixed;
     display: flex;
+    padding: 0.5% 40% 0.5% 40%;    
     top: 0;
     width: 100%;
-    padding: 1% 0 1% 0;
 }
 
 .container-selected {
@@ -32,17 +31,9 @@ $navHeight: 20vh;
 }
 
 .links-container {
-    flex:1;
     display: flex;
-    justify-content: space-between;
-}
-
-.nav-container {
-    
-}
-
-.image-container {
     flex:1;
+    justify-content: space-between;
 }
 
 ul {
