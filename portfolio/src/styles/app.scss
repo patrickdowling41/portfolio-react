@@ -1,0 +1,10 @@
+$componentHeight: 100vh;
+
+.home-container
+{
+    min-height: 100vh;
+    max-width: 100%;
+    background-image: url('/images/landscape-4637538_1920.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+}

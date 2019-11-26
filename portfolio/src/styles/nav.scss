@@ -1,0 +1,48 @@
+$navColour: #333333; 
+$navHeight: 20vh;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-top {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding: 2% 40% 0 40%;    
+}
+
+// This is the nav used when user scrolls up from anywhere below the top of the screen.
+.nav-scrolled {
+    transition-duration: 0.5s;
+    background-color: $navColour;
+    position: fixed;
+    display: flex;
+    padding: 0.5% 40% 0.5% 40%;    
+    top: 0;
+    width: 100%;
+}
+
+.container-selected {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.links-container {
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+}
+
+ul {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color: rgb(30, 31, 30);
+        transition-duration: 0.2s
+    }
+}
