@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+// import { Parallax, ParallaxLayer } from 'react-spring/addons';
 import NavBar from './components/nav/NavBar'
 import Home from './components/home/Home'
 import Projects from './components/projects/Projects'
@@ -15,17 +16,18 @@ class App extends Component {
     }
 
     render() {
+        let parallax;
         return (
             <>
                 <div className="nav-component">
                     <NavBar/>
                 </div>
-                <div className="home-component">
-                    <Home/>
-                </div>
-                <div>
-                    <AboutMe/>
-                </div>
+                        <div className="home-component">
+                            <Home/>
+                        </div>
+                        <div>
+                            <AboutMe/>
+                        </div>
                 <div className="projects-component">
                     <Projects/>
                 </div>

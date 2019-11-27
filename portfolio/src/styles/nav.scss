@@ -28,7 +28,7 @@ $navItemHoverColour: #4DB33D;
 }
 
 .container-selected {
-    background-color: white;
+    background-color: #e8e7d5;
     border-radius: 5px;
 }
 
@@ -42,7 +42,7 @@ $navItemHoverColour: #4DB33D;
 ul {
     a {
         text-decoration: none;
-        color: white;
+        color: #e8e7d5
     }
     a:hover{
         color: $navItemHoverColour;
