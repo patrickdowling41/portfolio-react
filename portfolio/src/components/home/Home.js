@@ -6,7 +6,7 @@ class Home extends Component {
         return (
             <div className="name-container">
                 <div className="vert-box"><h1>Patrick Dowling</h1></div>
-                <div className="vert-box"><h2>Bachelor of Software Engineering</h2></div>
+                <div className="vert-box"><h2>Software Engineering</h2></div>
             </div>
         )
     }

@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
-import Nav from './components/nav/Nav'
+import NavBar from './components/nav/NavBar'
 import Home from './components/home/Home'
 import Projects from './components/projects/Projects'
 import Footer from './components/footer/Footer'
+import AboutMe from './components/aboutme/AboutMe'
 import './styles/app.scss'
 
 
@@ -16,18 +17,20 @@ class App extends Component {
     render() {
         return (
             <>
-                <div className="nav-container">
-                    <Nav/>
+                <div className="nav-component">
+                    <NavBar/>
                 </div>
-                <div className="home-container">
-                    <Home></Home>
+                <div className="home-component">
+                    <Home/>
                 </div>
-                
-                <div className="projects-container">
-                    <Projects></Projects>
+                <div>
+                    <AboutMe/>
                 </div>
-                <div className="footer-container">
-                    <Footer></Footer>
+                <div className="projects-component">
+                    <Projects/>
+                </div>
+                <div className="footer-component">
+                    <Footer/>
                 </div>
             </>
         )
