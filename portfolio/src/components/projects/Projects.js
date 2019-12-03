@@ -1,14 +1,13 @@
 import React, {Component} from 'react'
-import '../../styles/projects.scss'
+import './projects.scss'
 
 class Projects extends Component {
 
     render() {
         return (
-            <div className="projects-container">
+            <div className="projects-component">
             </div>
         )
     }
-
 }
 export default Projects

@@ -1,0 +1,20 @@
+$ambgColour: white;
+$amMarginVal: 2% 10% 0% 10%;
+
+.aboutMeContainer {
+    background-color: $ambgColour;
+    min-height: 50vh;
+}
+
+.amHeading {
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #4DB33D;
+    padding-bottom: 2vh;
+    margin: $amMarginVal
+}
+
+.amBody {
+    margin: $amMarginVal
+}
+

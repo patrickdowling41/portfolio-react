@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import navStyles from '../../styles/nav.scss'
+import navStyles from './nav.scss'
 
 class Nav extends Component {
 
@@ -24,7 +24,7 @@ class Nav extends Component {
     setNav()
     {
         // Used to determine when initial page has been scrolled past.
-        if (window.scrollY > 70) {
+        if (window.scrollY > 80) {
             // Used to work out if the user scrolled up or down.
             this.setState({navState: "scrolled"})
         }
@@ -59,26 +59,24 @@ class Nav extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className={"nav-" + this.state.navState}>
+            <div className={"nav-" + this.state.navState}>
 
-                    <div className="image-container">
+                <div className="image-container">
 
-                    </div>
-
-                    <div className="links-container">
-                        <div className={"nav-container " + `${this.state.selectedValue === "about-me" ? "selected" : "not-selected"}`}>
-                            <ul><a href="#">About me</a></ul>
-                        </div>
-                        <div className={"nav-container " + `${this.state.selectedValue === "projects" ? "selected" : "not-selected"}`}>
-                            <ul><a href="#">Projects</a></ul>
-                        </div>
-                        <div className={"nav-container " + `${this.state.selectedValue === "contact-me" ? "selected" : "not-selected"}`}>
-                            <ul><a href="#">Contact me</a></ul>
-                        </div>
-                    </div>
-                    
                 </div>
+
+                <div className="links-container">
+                    <div className={"nav-container " + `${this.state.selectedValue === "about-me" ? "selected" : "not-selected"}`}>
+                        <ul><a href="#">About me</a></ul>
+                    </div>
+                    <div className={"nav-container " + `${this.state.selectedValue === "projects" ? "selected" : "not-selected"}`}>
+                        <ul><a href="#">Projects</a></ul>
+                    </div>
+                    <div className={"nav-container " + `${this.state.selectedValue === "contact-me" ? "selected" : "not-selected"}`}>
+                        <ul><a href="#">Contact me</a></ul>
+                    </div>
+                </div>
+                
             </div>
         )
     }
