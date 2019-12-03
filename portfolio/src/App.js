@@ -5,6 +5,7 @@ import Projects from './components/projects/Projects'
 import Footer from './components/footer/Footer'
 import AboutMe from './components/aboutme/AboutMe'
 import './app.scss'
+import './bootstrap.css'
 
 
 // This class is responsible for containing all other components.
