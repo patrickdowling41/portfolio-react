@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
-import Nav from './components/nav/Nav'
+// import { Parallax, ParallaxLayer } from 'react-spring/addons';
+import NavBar from './components/nav/NavBar'
 import Home from './components/home/Home'
 import Projects from './components/projects/Projects'
 import Footer from './components/footer/Footer'
+import AboutMe from './components/aboutme/AboutMe'
 import './styles/app.scss'
 
 
@@ -14,20 +16,23 @@ class App extends Component {
     }
 
     render() {
+        let parallax;
         return (
             <>
-                <div className="nav-container">
-                    <Nav/>
+                <div className="nav-component">
+                    <NavBar/>
                 </div>
-                <div className="home-container">
-                    <Home></Home>
+                        <div className="home-component">
+                            <Home/>
+                        </div>
+                        <div>
+                            <AboutMe/>
+                        </div>
+                <div className="projects-component">
+                    <Projects/>
                 </div>
-                
-                <div className="projects-container">
-                    <Projects></Projects>
-                </div>
-                <div className="footer-container">
-                    <Footer></Footer>
+                <div className="footer-component">
+                    <Footer/>
                 </div>
             </>
         )

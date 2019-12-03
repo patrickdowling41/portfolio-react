@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+.name-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+h1 {
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-size: 64px;
+}
+
+h2 {
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-size: 32px;
+}

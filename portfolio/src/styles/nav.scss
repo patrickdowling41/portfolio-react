@@ -1,5 +1,5 @@
 $navColour: #333333; 
-$navHeight: 20vh;
+$navItemHoverColour: #4DB33D;
 
 * {
     box-sizing: border-box;
@@ -11,7 +11,8 @@ $navHeight: 20vh;
     display: flex;
     position: absolute;
     width: 100%;
-    padding: 2% 40% 0 40%;    
+    padding: 4% 40% 0 40%;
+    z-index: 500; 
 }
 
 // This is the nav used when user scrolls up from anywhere below the top of the screen.
@@ -20,18 +21,20 @@ $navHeight: 20vh;
     background-color: $navColour;
     position: fixed;
     display: flex;
-    padding: 0.5% 40% 0.5% 40%;    
+    padding: 1% 40% 1% 40%; 
     top: 0;
     width: 100%;
+    z-index: 500;
 }
 
 .container-selected {
-    background-color: white;
+    background-color: #e8e7d5;
     border-radius: 5px;
 }
 
 .links-container {
     display: flex;
+    flex-wrap: wrap;
     flex:1;
     justify-content: space-between;
 }
@@ -39,10 +42,10 @@ $navHeight: 20vh;
 ul {
     a {
         text-decoration: none;
-        color: white;
+        color: #e8e7d5
     }
     a:hover{
-        color: rgb(30, 31, 30);
+        color: $navItemHoverColour;
         transition-duration: 0.2s
     }
 }
