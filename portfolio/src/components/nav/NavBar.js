@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import navStyles from '../../styles/nav.scss'
+import navStyles from './nav.scss'
 
 class Nav extends Component {
 
