@@ -4,7 +4,7 @@ import './aboutMe.scss'
 class AboutMe extends Component {
     render() {
         return (
-            <div className="aboutMeContainer">
+            <div className="about-me-component">
                 <div className="row">
                     <div className="col">
                         <h1 className="amHeading">About Me</h1>
