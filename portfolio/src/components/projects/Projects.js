@@ -9,8 +9,6 @@ class Projects extends Component {
                 <div className="row">
                     <div className="col">
                         <h1 className="projects-heading">Projects</h1>
-
-                        
                     </div>
                 </div>
             </div>

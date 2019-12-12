@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import NavBar from './components/nav/NavBar'
 import Home from './components/home/Home'
 import Projects from './components/projects/Projects'
-import Footer from './components/footer/Footer'
+import ContactMe from './components/contactme/ContactMe'
 import AboutMe from './components/aboutme/AboutMe'
 import './app.scss'
 import './bootstrap.css'
@@ -18,20 +18,20 @@ class App extends Component {
     render() {
         return (
             <>
-                <div className="component nav-component">
+                <div className="nav-component">
                     <NavBar/>
                 </div>
-                <div className="component home-component">
+                <div className="home-component">
                     <Home/>
                 </div>
-                <div className="component aboutme-component">
+                <div className="aboutme-component">
                     <AboutMe/>
                 </div>
-                <div className="component projects-component">
+                <div className="projects-component">
                     <Projects/>
                 </div>
-                <div className="component footer-component">
-                    <Footer/>
+                <div className="contactme-component">
+                <ContactMe/>
                 </div>
             </>
         )
