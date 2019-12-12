@@ -18,19 +18,19 @@ class App extends Component {
     render() {
         return (
             <>
-                <div className="nav-component">
+                <div className="component nav-component">
                     <NavBar/>
                 </div>
-                <div className="home-component">
+                <div className="component home-component">
                     <Home/>
                 </div>
-                <div className="aboutme-component">
+                <div className="component aboutme-component">
                     <AboutMe/>
                 </div>
-                <div className="projects-component">
+                <div className="component projects-component">
                     <Projects/>
                 </div>
-                <div className="footer-component">
+                <div className="component footer-component">
                     <Footer/>
                 </div>
             </>
