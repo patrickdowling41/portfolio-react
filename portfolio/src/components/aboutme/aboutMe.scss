@@ -3,17 +3,42 @@ $amMarginVal: 2% 10% 2% 10%;
 
 .about-me-component {
     background-color: $ambgColour;
-}
-
-.amHeading {
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #4DB33D;
-    padding-bottom: 2vh;
-    margin: $amMarginVal;
+    // min-height: 50vh;
 }
 
 .amBody {
-    margin: $amMarginVal;
+    color: white;
+    font-size: 20pt;
+    font-family: 'Sulphur Point', sans-serif;
+    padding: 10% 0 2% 0;
 }
 
+.amLinks {
+    color: white;
+    font-size: 16pt;
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: lighter;
+    padding: 0 0 0 0;
+    display: block;
+}
+
+.mongo-logo
+{
+    margin: 10% 0 10% 30%;
+    height:200px;
+    width:200px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .mongo-logo
+    {
+        margin: 10% 0 10% 30%;
+        height:200px;
+        width:200px;
+    }
+    .amLinks {
+        text-align: center;
+    }
+
+}
