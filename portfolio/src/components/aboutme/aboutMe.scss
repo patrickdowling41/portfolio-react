@@ -1,4 +1,5 @@
 $ambgColour: #242424; 
+$brandingGreen: #4DB33D;
 $amMarginVal: 2% 10% 2% 10%;
 
 .about-me-component {
@@ -17,9 +18,14 @@ $amMarginVal: 2% 10% 2% 10%;
     color: white;
     font-size: 16pt;
     font-family: 'Sulphur Point', sans-serif;
-    font-weight: lighter;
     padding: 0 0 0 0;
     display: block;
+    
+    &:hover {
+        text-decoration: none;
+        color: $brandingGreen;
+        transition-duration: 0.3s;
+    }
 }
 
 .mongo-logo

@@ -1,5 +1,5 @@
 $navColour: #333333; 
-$navItemHoverColour: #4DB33D;
+$brandingGreen: #4DB33D;
 
 * {
     box-sizing: border-box;
@@ -46,7 +46,7 @@ ul {
         color: #e8e7d5
     }
     a:hover{
-        color: $navItemHoverColour;
+        color: $brandingGreen;
         transition-duration: 0.2s;
         text-decoration: none;
     }

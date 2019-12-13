@@ -7,8 +7,14 @@ class Projects extends Component {
         return (
             <div className="projects-component">
                 <div className="row">
-                    <div className="col">
-                        <h1 className="projects-heading">Projects</h1>
+                    <div className="col-md-3">
+                        
+                    </div>
+                    <div className="col-md-3">
+                        
+                    </div>
+                    <div className="col-md-3">
+                        
                     </div>
                 </div>
             </div>
