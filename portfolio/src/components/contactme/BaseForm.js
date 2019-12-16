@@ -23,39 +23,31 @@ const BaseForm = () => {
                 handleBlur, 
                 handleSubmit
                 }) => (
-                <form onSubmit={handleSubmit}>
-                    <input 
+                <Form>
+                    <Field
                         type="text"
                         name="name"
-                        value={values.name}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        placeholder="Full Name"
                     />
-                    <input 
+                    <Field 
                         type="text"
                         name="email"
-                        value={values.email}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        placeholder="Message"
                     />
-                    <input 
+                    <Field 
                         type="text"
                         name="phoneNo"
-                        value={values.phoneNo}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        placeholder="Message"
                     />
-                    <input 
+                    <Field 
                         type="text"
                         name="message"
-                        value={values.message}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        placeholder="Message"
                     />
-                    <pre>{JSON.stringify(values, null, 2)}</pre>
-                </form>
+                    <button type="submit">Send</button>
+                </Form>
             )} 
-            
+
             </Formik>
         </>
     )
