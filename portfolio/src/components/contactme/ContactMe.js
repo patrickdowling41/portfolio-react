@@ -1,26 +1,15 @@
-import React, {Component} from 'react'
-import { Formik, Field, Form} from 'formik'
+import React, { Component } from 'react';
+import BaseForm from './BaseForm';
 
 class ContactMe extends Component {
     render() {
         return (
-            <>
-                <h2 className="contact-header">
-                    If you have any questions, send me through a message
-                </h2>
-                <Formik
-                    initialValues={{
-                        name: "",
-                        email: "",
-                        phoneNo: "",
-                        message: ""
-                    }}
-                >
-
-                </Formik>
-            </>
-        )
+            <div>
+                
+                <BaseForm/>
+            </div>
+        );
     }
-
 }
-export default ContactMe
+
+export default ContactMe;
