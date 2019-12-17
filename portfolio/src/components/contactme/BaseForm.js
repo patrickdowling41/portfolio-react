@@ -1,6 +1,7 @@
 import React from 'react'
 import { Formik, Field, Form} from 'formik'
 import * as yup from 'yup'
+import './contactMe.scss'
 
 const validationSchema = yup.object({
     name: yup
@@ -29,41 +30,44 @@ const BaseForm = () => {
                     message: ""
                 }}
                 validationSchema={validationSchema}
-                onSubmit={(data, { setSubmitting }) => {
+                onSubmit={({}) => {
                     setTimeout(() => {
-                    setSubmitting(false);
+                        
                     }, 400);
                 }}
             >
             {({ 
                 values, 
                 errors,
+                touched,
                 isSubmitting
                 }) => (
                 <Form>
                     <Field
                         type="text"
                         name="name"
+                        className={touched.name && errors.name ? "text-field field-error" : "text-field"}
                         placeholder="Full Name"
                     />
                     <Field 
                         type="text"
                         name="email"
+                        className={touched.email && errors.email ? "text-field field-error" : "text-field"}
                         placeholder="Email"
                     />
                     <Field 
                         type="text"
                         name="phoneNo"
+                        className={touched.phoneNo && errors.phoneNo ? "field-error" : "text-field"}
                         placeholder="Phone No."
                     />
                     <Field 
                         type="text"
                         name="message"
+                        className="message-field"
                         placeholder="Message"
                     />
                     <button type="submit">Send</button>
-                    <pre>{JSON.stringify(values, null, 2)}</pre>
-                    <pre>{JSON.stringify(errors, null, 2)}</pre>
 
                 </Form>
             )} 

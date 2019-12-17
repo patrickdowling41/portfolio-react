@@ -5,7 +5,6 @@ class ContactMe extends Component {
     render() {
         return (
             <div>
-                
                 <BaseForm/>
             </div>
         );
