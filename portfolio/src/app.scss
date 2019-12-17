@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+$ambgColour: #242424; 
 
 .home-component
 {
@@ -10,4 +13,12 @@
     margin:0;
     padding:0;
     display: flex;
+}
+
+.about-me-component {
+    background-color: $ambgColour;
+}
+
+.contact-me-component {
+    background-color: black;
 }

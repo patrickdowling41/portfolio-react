@@ -40,33 +40,50 @@ const BaseForm = () => {
                 values, 
                 errors,
                 touched,
-                isSubmitting
+                isSubmitting,
+                handleBlur,
+                handleChange,
                 }) => (
                 <Form>
-                    <Field
-                        type="text"
-                        name="name"
-                        className={touched.name && errors.name ? "text-field field-error" : "text-field"}
-                        placeholder="Full Name"
-                    />
-                    <Field 
-                        type="text"
-                        name="email"
-                        className={touched.email && errors.email ? "text-field field-error" : "text-field"}
-                        placeholder="Email"
-                    />
-                    <Field 
-                        type="text"
-                        name="phoneNo"
-                        className={touched.phoneNo && errors.phoneNo ? "field-error" : "text-field"}
-                        placeholder="Phone No."
-                    />
-                    <Field 
-                        type="text"
-                        name="message"
-                        className="message-field"
-                        placeholder="Message"
-                    />
+                    <div className="form-element">
+                        <label>Full Name</label>
+                        <Field
+                            type="text"
+                            name="name"
+                            className={touched.name && errors.name ? "contact-text-field field-error" : "contact-text-field"}
+                        />
+                        <i className="ion-alert"></i>
+                    </div>
+                    <div className="form-element">
+                        <label>Email</label>
+                        <Field 
+                            type="text"
+                            name="email"
+                            className={touched.email && errors.email ? "contact-text-field field-error" : "contact-text-field"}
+                        />
+                        <i className="ion-alert"></i>
+                    </div>
+                    <div className="form-element">
+                        <label>Phone No.</label>
+                        <Field 
+                            type="text"
+                            name="phoneNo"
+                            className={touched.phoneNo && errors.phoneNo ? "contact-text-field field-error" : "contact-text-field"}
+                        />
+                        <i class="ion-alert"></i>
+                    </div>
+                    <div className="form-element">
+                        <label>Message</label>
+                        <textarea 
+                            name="message" 
+                            className="contact-message-field"
+                            value={values.message}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                        />
+                    </div>
+
+                    <pre>{JSON.stringify(values)}</pre>
                     <button type="submit">Send</button>
 
                 </Form>

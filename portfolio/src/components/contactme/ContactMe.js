@@ -4,7 +4,7 @@ import BaseForm from './BaseForm';
 class ContactMe extends Component {
     render() {
         return (
-            <div>
+            <div className="container contact-container">
                 <BaseForm/>
             </div>
         );

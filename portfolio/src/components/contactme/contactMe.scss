@@ -1,3 +1,60 @@
-input.field-error {
-    border: 1px solid red;
+// font family for form
+$form-text-ff: 'Raleway', sans-serif;
+
+// Text field colours
+$text-bg: #2F2F2F;
+$text-border: #646464;
+$text-color: #8E8E8E;
+
+.contact-me-component {
+    background-color: black;
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.ion-alert {
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    right: 10px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text-field {
+    height: 64px;
+    padding-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: $text-color;
+    background-color: $text-bg;
+    font-size: 36px;
+    border: $text-border solid 1px;
+
+    &::placeholder{
+        opacity: 0.3;
+    }
+}
+
+.contact-message-field
+{
+    height: 300px;
+    padding-left: 10px;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    color: $text-color;
+    background-color: $text-bg;
+    border: $text-border solid 1px;
+
+    &::placeholder{
+        opacity: 0.3;
+    }
+}
+
+label {
+    text-align: left;
 }
