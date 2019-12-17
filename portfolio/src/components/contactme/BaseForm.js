@@ -1,5 +1,22 @@
-import React, {Component} from 'react'
+import React from 'react'
 import { Formik, Field, Form} from 'formik'
+import * as yup from 'yup'
+
+const validationSchema = yup.object({
+    name: yup
+    .string()
+    .required()
+    .min(2, "Please include your full name"),
+    email: yup
+    .string()
+    .required()
+    .email("Please include a valid email"),
+    phoneNo: yup
+    .string()
+    .required()
+    // Regular expression for valid phone number
+    .matches(/^(?:\+?([1-9]{2}))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$/,"Please include a valid phone number")
+});
 
 const BaseForm = () => {
     return ( 
@@ -11,6 +28,7 @@ const BaseForm = () => {
                     phoneNo: "",
                     message: ""
                 }}
+                validationSchema={validationSchema}
                 onSubmit={(data, { setSubmitting }) => {
                     setTimeout(() => {
                     setSubmitting(false);
@@ -19,9 +37,8 @@ const BaseForm = () => {
             >
             {({ 
                 values, 
-                handleChange,
-                handleBlur, 
-                handleSubmit
+                errors,
+                isSubmitting
                 }) => (
                 <Form>
                     <Field
@@ -32,12 +49,12 @@ const BaseForm = () => {
                     <Field 
                         type="text"
                         name="email"
-                        placeholder="Message"
+                        placeholder="Email"
                     />
                     <Field 
                         type="text"
                         name="phoneNo"
-                        placeholder="Message"
+                        placeholder="Phone No."
                     />
                     <Field 
                         type="text"
@@ -45,6 +62,9 @@ const BaseForm = () => {
                         placeholder="Message"
                     />
                     <button type="submit">Send</button>
+                    <pre>{JSON.stringify(values, null, 2)}</pre>
+                    <pre>{JSON.stringify(errors, null, 2)}</pre>
+
                 </Form>
             )} 
 

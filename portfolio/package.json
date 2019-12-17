@@ -9,7 +9,8 @@
     "react-dom": "^16.11.0",
     "react-scripts": "^3.3.0",
     "react-spring": "^8.0.27",
-    "rellax": "^1.10.0"
+    "rellax": "^1.10.0",
+    "yup": "^0.28.0"
   },
   "scripts": {
     "start": "react-scripts start",
