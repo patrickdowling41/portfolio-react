@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 $ambgColour: #242424; 
+$contact-bg: #181818;
 
 .home-component
 {
@@ -20,5 +21,5 @@ $ambgColour: #242424;
 }
 
 .contact-me-component {
-    background-color: black;
+    background-color: $contact-bg;
 }
