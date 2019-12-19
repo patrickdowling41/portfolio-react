@@ -24,13 +24,13 @@ class App extends Component {
                 <div className="home-component">
                     <Home/>
                 </div>
-                <div className="aboutme-component">
+                <div className="about-me-component">
                     <AboutMe/>
                 </div>
                 <div className="projects-component">
                     <Projects/>
                 </div>
-                <div className="contactme-component">
+                <div className="contact-me-component">
                 <ContactMe/>
                 </div>
             </>

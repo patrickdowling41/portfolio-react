@@ -1,11 +1,5 @@
-$ambgColour: #242424; 
 $brandingGreen: #4DB33D;
 $amMarginVal: 2% 10% 2% 10%;
-
-.about-me-component {
-    background-color: $ambgColour;
-    // min-height: 50vh;
-}
 
 .amBody {
     color: white;
@@ -19,7 +13,6 @@ $amMarginVal: 2% 10% 2% 10%;
     font-size: 16pt;
     font-family: 'Sulphur Point', sans-serif;
     padding: 0 0 0 0;
-    display: block;
     
     &:hover {
         text-decoration: none;
