@@ -5,7 +5,7 @@ class AboutMe extends Component {
 
     render() {
         return (
-            <div className="about-me-container">
+            <div className="about-me-component">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">

@@ -2,12 +2,6 @@ import React, {Component} from 'react'
 import SingleProject from './SingleProject'
 import './projects.scss'
 
-
-
-
-
-
-
 class Projects extends Component {
 
     constructor(props)
