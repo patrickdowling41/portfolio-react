@@ -40,14 +40,13 @@ $brandingGreen: #4DB33D;
     justify-content: space-between;
 }
 
-ul {
-    a {
+    ul {
         text-decoration: none;
-        color: #e8e7d5
+        color: #e8e7d5;
     }
-    a:hover{
+    ul:hover{
         color: $brandingGreen;
         transition-duration: 0.2s;
         text-decoration: none;
+        cursor: pointer;
     }
-}

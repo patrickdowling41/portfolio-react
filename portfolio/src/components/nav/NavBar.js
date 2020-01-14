@@ -62,13 +62,14 @@ class Nav extends Component {
                 <div className="links-container">
                     <div className={"nav-container " + `${this.state.selectedValue === "about-me" ? "selected" : "not-selected"}`}>
                         <ul>
-                        <Link
-                            activeClass="active"
-                            to="about-me-component"
-                            smooth={true}
-                        >
-                            About Me
-                        </Link>
+                            <Link
+                                activeClass="active"
+                                to="about-me-component"
+                                smooth={true}
+                                offset={-69}
+                            >
+                                About Me
+                            </Link>
                         </ul>
                     </div>
                     <div className={"nav-container " + `${this.state.selectedValue === "projects" ? "selected" : "not-selected"}`}>
@@ -77,6 +78,7 @@ class Nav extends Component {
                                 activeClass="active"
                                 to="projects-component"
                                 smooth={true}
+                                offset={-69}
                             >
                                 Projects
                             </Link>
@@ -88,6 +90,7 @@ class Nav extends Component {
                                 activeClass="active"
                                 to="contact-me-component"
                                 smooth={true}
+                                offset={-69}
                             >
                                 Contact me
                             </Link>
