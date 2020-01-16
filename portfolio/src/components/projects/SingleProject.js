@@ -16,7 +16,7 @@ class Projects extends Component {
 
     render() {
         return (
-            <div className="single-project-component">
+            <div className="single-project-content">
                 <div className="logo-container">
                     <img className="project-icon" style={{height:"100px", width: "100px"}} src={"/images/" + this.state.icon} alt="project-icon"/>
                 </div> 

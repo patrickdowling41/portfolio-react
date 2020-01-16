@@ -66,7 +66,7 @@ class Nav extends Component {
                                 activeClass="active"
                                 to="about-me-component"
                                 smooth={true}
-                                offset={-69}
+                                offset={-65}
                             >
                                 About Me
                             </Link>
@@ -78,7 +78,7 @@ class Nav extends Component {
                                 activeClass="active"
                                 to="projects-component"
                                 smooth={true}
-                                offset={-69}
+                                offset={-65}
                             >
                                 Projects
                             </Link>
@@ -90,7 +90,7 @@ class Nav extends Component {
                                 activeClass="active"
                                 to="contact-me-component"
                                 smooth={true}
-                                offset={-69}
+                                offset={-65}
                             >
                                 Contact me
                             </Link>

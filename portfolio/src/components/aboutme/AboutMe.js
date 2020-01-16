@@ -9,7 +9,7 @@ class AboutMe extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <p className="amBody"> Hi I'm Patrick, I love solving problems using new and innovative technologies.</p>
+                            <p className="amBody"> Hi I'm Patrick, <br/> I love solving problems using new and innovative technologies.</p>
                             <div><a href="/PatrickDowlingResume.pdf" className="amLinks">> More about me</a></div>
                             <div><a href="/PatrickDowlingResume.pdf" className="amLinks">> Download my resume</a></div>
                         </div>

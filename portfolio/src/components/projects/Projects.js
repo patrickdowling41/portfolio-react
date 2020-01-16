@@ -36,20 +36,17 @@ class Projects extends Component {
         return (
             <div className="projects-component">
                 <h3 id="projects-header">Recent projects</h3>
-                <div className="container">
-                    <div className="row">     
-                        {this.state.projects.map( (projects) => (
-                            <div className="col-md-4">
-                                <SingleProject
-                                description={projects.description} 
-                                title={projects.title}
-                                icon={projects.icon}  
-                                />
-                            </div>
-                        ))}
-                    </div>
+                <div className="flex-container">
+                    {this.state.projects.map( (projects) => (
+                        <SingleProject
+                        description={projects.description}
+                        title={projects.title}
+                        icon={projects.icon}
+                        />
+                    ))}
                 </div>
             </div>
+                
         )
     }
 }
