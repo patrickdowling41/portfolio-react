@@ -24,7 +24,7 @@ class Nav extends Component {
     setNav()
     {
         // Used to determine when initial page has been scrolled past.
-        if (window.scrollY > 80) {
+        if (window.scrollY > 100) {
             // Used to work out if the user scrolled up or down.
             this.setState({navState: "scrolled"})
         }
@@ -66,9 +66,9 @@ class Nav extends Component {
                                 activeClass="active"
                                 to="about-me-component"
                                 smooth={true}
-                                offset={-65}
+                                offset={-70}
                             >
-                                About Me
+                                About me
                             </Link>
                         </ul>
                     </div>
@@ -78,7 +78,7 @@ class Nav extends Component {
                                 activeClass="active"
                                 to="projects-component"
                                 smooth={true}
-                                offset={-65}
+                                offset={-70}
                             >
                                 Projects
                             </Link>
@@ -90,14 +90,13 @@ class Nav extends Component {
                                 activeClass="active"
                                 to="contact-me-component"
                                 smooth={true}
-                                offset={-65}
+                                offset={-70}
                             >
                                 Contact me
                             </Link>
                         </ul>
                     </div>
                 </div>
-                
             </div>
         )
     }

@@ -10,7 +10,6 @@ class Projects extends Component {
         this.state = {
             projects: this.currentProjects
         }
-
     }
 
     currentProjects = [
