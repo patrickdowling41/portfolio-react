@@ -22,11 +22,6 @@ class Projects extends Component {
             title: "B+ Tree",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis augue mi, at tristique erat fringilla et. Sed vel ipsum purus. Pellentesque malesuada lacus at consectetur gravida. Vivamus eu vulputate sem.",
             icon: "binary_tree.png"
-        },
-        {
-            title: "Third project",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis augue mi, at tristique erat fringilla et. Sed vel ipsum purus. Pellentesque malesuada lacus at consectetur gravida. Vivamus eu vulputate sem.",
-            icon: "placeholder.png"
         }
     ]
 
