@@ -16,12 +16,16 @@ $brandingGreenOpaque: rgba(67,153,52,0.7);
     border: 1px solid red;
 }
 
-.ion-alert {
+.icon-alert {
     color: red;
     font-size: 24pt;
-    position: absolute;
-    right: 18vw;
-    margin-top: 4.2vh;
+    position: relative;
+    // right: 18vw;
+    // margin-top: 4.2vh;
+}
+
+.icon-hidden {
+    display: none;
 }
 
 .form-element {

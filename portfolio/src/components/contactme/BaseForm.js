@@ -51,7 +51,7 @@ const BaseForm = () => {
                             name="name"
                             className={touched.name && errors.name ? "field-error" : "contact-text-field"}
                         />
-                        <i className={touched.name && errors.name ? "ion-alert" : "hidden"}></i>
+                        <div className={touched.name && errors.name ? "icon-alert" : "icon-hidden"}>!</div>
                     </div>
                     
                     <div className="form-element">
@@ -61,7 +61,7 @@ const BaseForm = () => {
                             name="email"
                             className={touched.email && errors.email ? "field-error" : "contact-text-field"}
                         />
-                       <i className={touched.email && errors.email ? "ion-alert" : "hidden"}></i>
+                       <div className={touched.email && errors.email ? "icon-alert" : "icon-hidden"}>!</div>
                     </div>
 
                     <div className="form-element">
@@ -71,7 +71,7 @@ const BaseForm = () => {
                             name="phoneNo"
                             className={touched.phoneNo && errors.phoneNo ? "field-error" : "contact-text-field"}
                         />
-                        <i className={touched.phoneNo && errors.phoneNo ? "ion-alert" : "hidden"}></i>
+                        <div className={touched.phoneNo && errors.phoneNo ? "icon-alert" : "icon-hidden"}>!</div>
                     </div>
 
                     <div className="form-element">
