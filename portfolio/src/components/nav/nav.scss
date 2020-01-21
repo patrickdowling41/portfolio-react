@@ -18,7 +18,6 @@ $brandingGreen: #4DB33D;
 
 // This is the nav used when user scrolls up from anywhere below the top of the screen.
 .nav-scrolled {
-    transition-duration: 0.25s;
     background-color: $navColour;
     position: fixed;
     display: flex;

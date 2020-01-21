@@ -19,9 +19,9 @@ $brandingGreenOpaque: rgba(67,153,52,0.7);
 .icon-alert {
     color: red;
     font-size: 24pt;
-    position: relative;
-    // right: 18vw;
-    // margin-top: 4.2vh;
+    right: 1%;
+    margin-top: 5.4vh;
+    position: absolute;
 }
 
 .icon-hidden {
@@ -31,6 +31,7 @@ $brandingGreenOpaque: rgba(67,153,52,0.7);
 .form-element {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .contact-text-field {
