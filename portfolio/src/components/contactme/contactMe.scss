@@ -92,5 +92,6 @@ $brandingGreenOpaque: rgba(67,153,52,0.7);
     &:hover {
         transition-duration: 0.5s;
         background-color: $brandingGreenOpaque;
+        cursor: pointer;
     }
 }

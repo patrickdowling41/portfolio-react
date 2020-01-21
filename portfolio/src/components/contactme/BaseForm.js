@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Formik, Field, Form} from 'formik'
 import * as yup from 'yup'
+import Modal from 'react-modal'
+import FormSubmitModal from './FormSubmitModal'
 import './contactMe.scss'
+
+
 
 const validationSchema = yup.object({
     name: yup
@@ -19,79 +23,112 @@ const validationSchema = yup.object({
     .matches(/^(?:\+?([0-9]{2}))? ?(?:\((?=.*\)))?([0,1]?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$/,"Please include a valid phone number")
 });
 
-const BaseForm = () => {
-    return ( 
-        <>
-            <Formik
-                initialValues={{
-                    name: "",
-                    email: "",
-                    phoneNo: "",
-                    message: ""
-                }}
-                validationSchema={validationSchema}
-                onSubmit={({}) => {
-                    setTimeout(() => {
-                        
-                    }, 400);
-                }}
-            >
-            {({ 
-                values, 
-                errors,
-                touched,
-                handleBlur,
-                handleChange,
-                }) => (
-                <Form>
-                    <div className="form-element">
-                        <label className="form-label">Full Name*</label>
-                        <Field
-                            type="text"
-                            name="name"
-                            className={touched.name && errors.name ? "field-error" : "contact-text-field"}
-                        />
-                        <div className={touched.name && errors.name ? "icon-alert" : "icon-hidden"}>!</div>
-                    </div>
-                    
-                    <div className="form-element">
-                        <label className="form-label">Email*</label>
-                        <Field 
-                            type="text"
-                            name="email"
-                            className={touched.email && errors.email ? "field-error" : "contact-text-field"}
-                        />
-                       <div className={touched.email && errors.email ? "icon-alert" : "icon-hidden"}>!</div>
-                    </div>
+const showModal = () => {
 
-                    <div className="form-element">
-                        <label className="form-label">Phone No.*</label>
-                        <Field 
-                            type="text"
-                            name="phoneNo"
-                            className={touched.phoneNo && errors.phoneNo ? "field-error" : "contact-text-field"}
-                        />
-                        <div className={touched.phoneNo && errors.phoneNo ? "icon-alert" : "icon-hidden"}>!</div>
-                    </div>
+}
 
-                    <div className="form-element">
-                        <label className="form-label">Message</label>
-                        <textarea 
-                            name="message" 
-                            className="contact-message-field"
-                            value={values.message}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                        />
-                    </div>
-                    
-                    <button type="submit" id="contact-submit">Send</button>
+class BaseForm extends Component {
 
-                </Form>
-            )} 
+    constructor(props) {
+        super(props)
+        this.state = {
+            showModal: false
+        }
+        this.openModal = this.openModal.bind(this)
+        this.closeModal = this.closeModal.bind(this)
+    }
 
-            </Formik>
-        </>
-    )
+    openModal () {
+        this.setState({ showModal: true });
+    }
+    
+    closeModal () {
+        this.setState({ showModal: false });
+    }
+
+    render() {
+        
+        return ( 
+            <>
+                    <Formik
+                        initialValues={{
+                            name: "",
+                            email: "",
+                            phoneNo: "",
+                            message: ""
+                        }}
+                        validationSchema={validationSchema}
+                        onSubmit={({}) => {
+                            this.openModal()
+                            console.log(this.state.showModal)
+                        }}
+                    >
+                    {({ 
+                        values, 
+                        errors,
+                        touched,
+                        handleBlur,
+                        handleChange,
+                        }) => (
+                        <Form>
+                            <div className="form-element">
+                                <label className="form-label">Full Name*</label>
+                                <Field
+                                    type="text"
+                                    name="name"
+                                    className={touched.name && errors.name ? "field-error" : "contact-text-field"}
+                                />
+                                <div className={touched.name && errors.name ? "icon-alert" : "icon-hidden"}>!</div>
+                            </div>
+                            
+                            <div className="form-element">
+                                <label className="form-label">Email*</label>
+                                <Field 
+                                    type="text"
+                                    name="email"
+                                    className={touched.email && errors.email ? "field-error" : "contact-text-field"}
+                                />
+                            <div className={touched.email && errors.email ? "icon-alert" : "icon-hidden"}>!</div>
+                            </div>
+
+                            <div className="form-element">
+                                <label className="form-label">Phone No.*</label>
+                                <Field 
+                                    type="text"
+                                    name="phoneNo"
+                                    className={touched.phoneNo && errors.phoneNo ? "field-error" : "contact-text-field"}
+                                />
+                                <div className={touched.phoneNo && errors.phoneNo ? "icon-alert" : "icon-hidden"}>!</div>
+                            </div>
+
+                            <div className="form-element">
+                                <label className="form-label">Message</label>
+                                <textarea 
+                                    name="message" 
+                                    className="contact-message-field"
+                                    value={values.message}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                />
+                            </div>
+                            
+                            <button type="submit" id="contact-submit">Send</button>
+
+                        </Form>
+                    )} 
+
+                    </Formik>
+
+                    <Modal 
+                    isOpen={this.showModal}
+                    onRequestClose={this.closeModal}
+                    className="contact-modal"
+                    overlayClassName="contact-submit-overlay"
+                    >
+                        <FormSubmitModal/>
+                    </Modal>
+            </>
+        )
+    }
 }
 export default BaseForm

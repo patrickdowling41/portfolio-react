@@ -12,7 +12,8 @@
     "react-scroll": "^1.7.15",
     "react-spring": "^8.0.27",
     "rellax": "^1.10.0",
-    "yup": "^0.28.0"
+    "yup": "^0.28.0",
+    "react-modal": "^3.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
