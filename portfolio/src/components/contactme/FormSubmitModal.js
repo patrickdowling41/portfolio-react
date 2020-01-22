@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
-export class FormSubmitModal extends Component {
-    render() {
-        return (
-            <div>
+const FormSubmitModal = () => {
+    return (
+        <>
                 
-            </div>
-        );
-    }
+                
+        </>
+    )
+    
 }
-
 export default FormSubmitModal;

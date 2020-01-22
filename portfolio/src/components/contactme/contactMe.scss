@@ -95,3 +95,26 @@ $brandingGreenOpaque: rgba(67,153,52,0.7);
         cursor: pointer;
     }
 }
+
+.contact-modal {
+    position: fixed;
+    top: 25vh;
+    left: 80vh;
+    right: 80vh;
+    bottom: 25vh;
+    padding:3vh;
+    background-color: white;
+    border-radius: 2%;
+    min-height: 40vh;
+    max-height: 80vh;
+    overflow: hidden;
+  }
+
+  .contact-submit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.7);
+  }

@@ -23,33 +23,41 @@ const validationSchema = yup.object({
     .matches(/^(?:\+?([0-9]{2}))? ?(?:\((?=.*\)))?([0,1]?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$/,"Please include a valid phone number")
 });
 
-const showModal = () => {
-
-}
+Modal.setAppElement('#root')
 
 class BaseForm extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            showModal: false
+            modalIsOpen: false
         }
         this.openModal = this.openModal.bind(this)
         this.closeModal = this.closeModal.bind(this)
     }
 
     openModal () {
-        this.setState({ showModal: true });
+        this.setState({ modalIsOpen: true });
     }
     
     closeModal () {
-        this.setState({ showModal: false });
+        this.setState({ modalIsOpen: false });
     }
 
     render() {
         
         return ( 
             <>
+
+<Modal 
+                    isOpen={this.state.modalIsOpen}
+                    onRequestClose={this.closeModal}
+                    className="contact-modal"
+                    overlayClassName="contact-submit-overlay"
+                    >
+                        <FormSubmitModal/>
+                    </Modal>
+
                     <Formik
                         initialValues={{
                             name: "",
@@ -59,6 +67,7 @@ class BaseForm extends Component {
                         }}
                         validationSchema={validationSchema}
                         onSubmit={({}) => {
+                            console.log(this.state.showModal)
                             this.openModal()
                             console.log(this.state.showModal)
                         }}
@@ -119,14 +128,7 @@ class BaseForm extends Component {
 
                     </Formik>
 
-                    <Modal 
-                    isOpen={this.showModal}
-                    onRequestClose={this.closeModal}
-                    className="contact-modal"
-                    overlayClassName="contact-submit-overlay"
-                    >
-                        <FormSubmitModal/>
-                    </Modal>
+                    
             </>
         )
     }
