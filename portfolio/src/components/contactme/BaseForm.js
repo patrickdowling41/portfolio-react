@@ -2,10 +2,7 @@ import React, { Component } from 'react'
 import { Formik, Field, Form} from 'formik'
 import * as yup from 'yup'
 import Modal from 'react-modal'
-import FormSubmitModal from './FormSubmitModal'
 import './contactMe.scss'
-
-
 
 const validationSchema = yup.object({
     name: yup
@@ -48,14 +45,12 @@ class BaseForm extends Component {
         
         return ( 
             <>
-
-<Modal 
+                    <Modal 
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.closeModal}
                     className="contact-modal"
                     overlayClassName="contact-submit-overlay"
                     >
-                        <FormSubmitModal/>
                     </Modal>
 
                     <Formik

@@ -11,7 +11,7 @@ class AboutMe extends Component {
                         <div className="col-lg-6">
                             <p className="amBody"> 
                             <div>Hi I'm Patrick, </div>
-                            <div>I'm a graduate Software Engineer currently residing in Melbourne, Australia. </div>
+                            <div>I am a graduate Software Engineer currently residing in Melbourne, Australia. </div>
                             <div>I am very passionate about developing quality products and learning new and innovative ways to solve business problems.</div>
                             </p>
                             <div style={{marginBottom:'5vh'}}>
