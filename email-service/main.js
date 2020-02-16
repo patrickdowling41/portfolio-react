@@ -19,11 +19,15 @@ let transporter = nodemailer.createTransport({
     })
 });
 
-app.post('/api/v1/email', (req, res) => {
-
+// post request to send through email to user who filled in contact form.
+app.post('/api/v1/email-confirmation', (req, res) => {
     sendResponseEmail(transporter, req.body.email)
-    sendContactFormInfo(transporter, req.body.name, req.body.email, req.body.phoneNo, req.body.message)
+    res.status(200).send('Success.')
+})
 
+// post request to send through email to my own email
+app.post('/api/v1/email-info', (req, res) => {
+    sendContactFormInfo(transporter, req.body.name, req.body.email, req.body.phoneNo, req.body.message)
     res.status(200).send('Success.')
 })
 
@@ -43,7 +47,7 @@ Patrick Dowling`
     }, (err, info) => {
         console.log("Error: " + err)
         console.log("Info: " + info)
-    });
+    })
 }
 
 // send email to myself, sending me their contact information.
@@ -62,7 +66,7 @@ Message left: ${message}`
     }, (err, info) => {
         console.log("Error: " + err)
         console.log("Info: " + info)
-    });
+    })
 }
 
 app.listen(3000)
