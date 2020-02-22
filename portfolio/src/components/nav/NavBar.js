@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import navStyles from './nav.scss'
+import './nav.scss'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Nav extends Component {
 
@@ -18,13 +19,12 @@ class Nav extends Component {
         this.componentDidMount = this.componentDidMount.bind(this)
         this.componentWillUnmount = this.componentWillUnmount.bind(this)
         this.setNav = this.setNav.bind(this)
-        this.assignSelected = this.assignSelected.bind(this)
     }
 
     setNav()
     {
         // Used to determine when initial page has been scrolled past.
-        if (window.scrollY > 80) {
+        if (window.scrollY > 100) {
             // Used to work out if the user scrolled up or down.
             this.setState({navState: "scrolled"})
         }
@@ -38,17 +38,11 @@ class Nav extends Component {
         console.log(this.state.navState)
     }
 
-    assignSelected()
-    {
-
-    }
-
     componentDidMount()
     {
         window.addEventListener('scroll', () => 
         {
             this.setNav()
-            this.assignSelected()
         })
     }
 
@@ -67,16 +61,42 @@ class Nav extends Component {
 
                 <div className="links-container">
                     <div className={"nav-container " + `${this.state.selectedValue === "about-me" ? "selected" : "not-selected"}`}>
-                        <ul><a href="#">About me</a></ul>
+                        <ul>
+                            <Link
+                                activeClass="active"
+                                to="about-me-component"
+                                smooth={true}
+                                offset={-70}
+                            >
+                                About me
+                            </Link>
+                        </ul>
                     </div>
                     <div className={"nav-container " + `${this.state.selectedValue === "projects" ? "selected" : "not-selected"}`}>
-                        <ul><a href="#">Projects</a></ul>
+                        <ul>
+                            <Link
+                                activeClass="active"
+                                to="projects-component"
+                                smooth={true}
+                                offset={-70}
+                            >
+                                Projects
+                            </Link>
+                        </ul>
                     </div>
                     <div className={"nav-container " + `${this.state.selectedValue === "contact-me" ? "selected" : "not-selected"}`}>
-                        <ul><a href="#">Contact me</a></ul>
+                        <ul>
+                            <Link
+                                activeClass="active"
+                                to="contact-me-component"
+                                smooth={true}
+                                offset={-70}
+                            >
+                                Contact me
+                            </Link>
+                        </ul>
                     </div>
                 </div>
-                
             </div>
         )
     }

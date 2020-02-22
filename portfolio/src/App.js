@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import NavBar from './components/nav/NavBar'
 import Home from './components/home/Home'
 import Projects from './components/projects/Projects'
-import ContactMe from './components/contactme/ContactMe'
 import AboutMe from './components/aboutme/AboutMe'
 import './app.scss'
 import './bootstrap.css'
@@ -29,9 +28,6 @@ class App extends Component {
                 </div>
                 <div className="projects-component">
                     <Projects/>
-                </div>
-                <div className="contact-me-component">
-                <ContactMe/>
                 </div>
             </>
         )

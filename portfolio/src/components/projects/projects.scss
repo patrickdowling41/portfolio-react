@@ -1,5 +1,4 @@
 $amMarginVal: 2% 10% 2% 10%;
-
 $project-bg: #2F2F2F;
 $brandingGreen: #4DB33D;
 
@@ -16,8 +15,12 @@ $brandingGreen: #4DB33D;
     color: white;
 }
 
-.projects-body {
-    
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5vh;
 }
 
 #projects-header {
@@ -28,11 +31,16 @@ $brandingGreen: #4DB33D;
     padding: 3% 0 3% 0;
 }
 
-.single-project-component
+.single-project-content
 {
     background-color: $project-bg;
-    height: 50vh;
-    margin-bottom: 10vh;
+    min-height: 60vh;
+    min-width: 400px;
+    max-width: 400px;
+    flex:1;
+    flex-wrap: wrap;
+    margin: 0 0.2vw 5vh 0.2vw;
+    cursor: pointer;
 
     &:hover {
         background-color: $brandingGreen;
@@ -57,4 +65,9 @@ $brandingGreen: #4DB33D;
     color: white;
     font-size: 14pt;
     font-family: 'Sulphur Point', sans-serif;
+}
+
+.project-icon {
+    height: 100px;
+    width: 100px;
 }

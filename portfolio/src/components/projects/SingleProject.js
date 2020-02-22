@@ -11,14 +11,13 @@ class Projects extends Component {
             title: this.props.title,
             description: this.props.description
         }
-
     }
 
     render() {
         return (
-            <div className="single-project-component">
+            <div className="single-project-content">
                 <div className="logo-container">
-                    <img className="project-icon" style={{height:"100px", width: "100px"}} src={"/images/" + this.state.icon} alt="project-icon"/>
+                    <img className="project-icon" src={"/images/" + this.state.icon} alt="project-icon"/>
                 </div> 
                 <h2 className="project-title">{this.state.title}</h2>
                 <div className="project-description">{this.state.description}</div>
