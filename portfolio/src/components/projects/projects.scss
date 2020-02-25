@@ -1,5 +1,7 @@
 $project-bg: #2F2F2F;
 $brandingGreen: #4DB33D;
+$text-color: #8E8E8E;
+$brandingGreenOpaque: rgba(67,153,52,0.7);
 $sulpherP: 'Sulphur Point', sans-serif;
 
 .flex-container {
@@ -27,11 +29,7 @@ $sulpherP: 'Sulphur Point', sans-serif;
     flex:1;
     flex-wrap: wrap;
     margin: 0 0.2vw 0.6vh 0.2vw;
-
-    &:hover {
-        background-color: $brandingGreen;
-        transition-duration: 0.3s;
-    }
+    position: relative;
 }
 
 .logo-container {
@@ -57,6 +55,38 @@ $sulpherP: 'Sulphur Point', sans-serif;
 .project-icon {
     height: 100px;
     width: 100px;
+}
+
+.project-source-code {
+    position: absolute;
+    bottom:20px;
+    right: 30px;
+    color: white;
+}
+
+.project-live-demo {
+    position: absolute;
+    bottom:20px;
+    left: 30px;
+    color: white;
+}
+
+.project-button {
+    background-color: transparent;
+    padding: 0 15px 0 15px;
+    border: solid $brandingGreen 1px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-radius: 15px;
+
+    &:hover {
+        transition-duration: 0.5s;
+        background-color: $brandingGreen;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
 }
 
 .technology-icon {

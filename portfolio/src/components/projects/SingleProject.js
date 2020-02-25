@@ -31,7 +31,12 @@ class Projects extends Component {
                         />
                     ))}
                 </div>
-                <div className="project-more-options"></div>
+                <div className="project-source-code">
+                    <a class="project-button" href="#" role="button">View source</a>
+                </div>
+                <div className="project-live-demo">
+                    <a class="project-button" href="#" role="button">Live demo</a>
+                </div>
             </div>
         )
     }
