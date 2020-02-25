@@ -1,19 +1,7 @@
-$amMarginVal: 2% 10% 2% 10%;
+$amMarginVal: 3% 10% 2% 10%;
 $project-bg: #2F2F2F;
 $brandingGreen: #4DB33D;
-
-.projects-component {
-    background-image: url('/images/city-1209105_1920.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.projects-heading {
-    border-bottom-color: #4DB33D;
-    margin: $amMarginVal;
-    color: white;
-}
+$sulpherP: 'Sulphur Point', sans-serif;
 
 .flex-container {
     display: flex;
@@ -27,20 +15,19 @@ $brandingGreen: #4DB33D;
     text-align: center;
     color: white;
     font-size: 28pt;
-    font-family: 'Sulphur Point', sans-serif;
+    font-family: $sulpherP;
     padding: 3% 0 3% 0;
 }
 
-.single-project-content
+.single-project-component
 {
     background-color: $project-bg;
-    min-height: 60vh;
+    min-height: 65vh;
     min-width: 400px;
     max-width: 400px;
     flex:1;
     flex-wrap: wrap;
-    margin: 0 0.2vw 5vh 0.2vw;
-    cursor: pointer;
+    margin: 0 0.2vw 0.6vh 0.2vw;
 
     &:hover {
         background-color: $brandingGreen;
@@ -50,13 +37,14 @@ $brandingGreen: #4DB33D;
 
 .logo-container {
     text-align: center;
+    padding-top: 20px;
 }
 
 .project-title {
     text-align: center;
     color: white;
     font-size: 28pt;
-    font-family: 'Sulphur Point', sans-serif;
+    font-family: $sulpherP;
     padding: 5% 0 5% 0;
 }
 
@@ -64,10 +52,15 @@ $brandingGreen: #4DB33D;
     margin: 0 10% 10% 10%;
     color: white;
     font-size: 14pt;
-    font-family: 'Sulphur Point', sans-serif;
+    font-family: $sulpherP;
 }
 
 .project-icon {
     height: 100px;
     width: 100px;
+}
+
+.technology-icon {
+    height: 50px;
+    width: 50px;
 }

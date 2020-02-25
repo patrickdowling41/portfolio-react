@@ -44,14 +44,19 @@ ul {
     font-family: Raleway;
     font-size: 18px;
     color: white;
-    padding: 4px;
+    padding: 2px;
+    display: block;
     margin: 0 1.2vw 0 1.2vw;
     &:hover{
         color: $brandingGreen;
         transition-duration: 0.2s;
         text-decoration: none;
-        padding: 4px;
+        display: block;
+        padding: 2px;
         cursor: pointer;
     }
+}
+a {
+    padding: 2px;
 }
     
