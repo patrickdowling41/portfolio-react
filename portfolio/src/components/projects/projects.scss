@@ -1,4 +1,3 @@
-$amMarginVal: 3% 10% 2% 10%;
 $project-bg: #2F2F2F;
 $brandingGreen: #4DB33D;
 $sulpherP: 'Sulphur Point', sans-serif;
@@ -49,7 +48,7 @@ $sulpherP: 'Sulphur Point', sans-serif;
 }
 
 .project-description {
-    margin: 0 10% 10% 10%;
+    margin: 0 10% 5% 10%;
     color: white;
     font-size: 14pt;
     font-family: $sulpherP;
@@ -61,6 +60,16 @@ $sulpherP: 'Sulphur Point', sans-serif;
 }
 
 .technology-icon {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
+}
+
+.technology-name {
+    color: white;
+    font-size: 20pt;
+    font-family: $sulpherP;
+}
+
+.technology-container {
+    padding-left: 10%;
 }
