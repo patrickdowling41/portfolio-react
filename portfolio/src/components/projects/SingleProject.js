@@ -11,7 +11,46 @@ class Projects extends Component {
             icon: this.props.icon,
             title: this.props.title,
             description: this.props.description,
-            techStack: this.props.techStack
+            techStack: this.props.techStack,
+            sourceCode: this.props.sourceCode,
+            liveDemo: this.props.liveDemo
+        }
+        this.getSourceCode = this.getSourceCode.bind(this)
+        this.getLiveDemo = this.getLiveDemo.bind(this)
+    }
+
+    getLiveDemo() {
+        if (this.state.liveDemo === undefined) {
+            return (
+                <div className="project-live-demo">
+                    <a class="project-button-disabled" disabled role="button">Live demo</a>
+                </div>
+            )
+        }
+        else {  
+            return (
+                <div className="project-live-demo">
+                    <a class="project-button" href={this.state.liveDemo} role="button">Live demo</a>
+                </div>
+            )
+        }
+    }
+
+    getSourceCode() {
+        if (this.state.sourceCode === undefined) {
+            return (
+                <div className="project-source-code">
+                    <a class="project-button-disabled" disabled role="button">View source</a>
+                </div>
+            )
+        }
+        else {
+            console.log(this.state.sourceCode)
+            return (
+                <div className="project-source-code">
+                    <a class="project-button" href={this.state.sourceCode} role="button">View source</a>
+                </div>
+            )
         }
     }
 
@@ -31,12 +70,8 @@ class Projects extends Component {
                         />
                     ))}
                 </div>
-                <div className="project-source-code">
-                    <a class="project-button" href="#" role="button">View source</a>
-                </div>
-                <div className="project-live-demo">
-                    <a class="project-button" href="#" role="button">Live demo</a>
-                </div>
+                {this.getSourceCode()}
+                {this.getLiveDemo()}
             </div>
         )
     }

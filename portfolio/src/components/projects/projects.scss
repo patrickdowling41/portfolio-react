@@ -89,6 +89,16 @@ $sulpherP: 'Sulphur Point', sans-serif;
     }
 }
 
+.project-button-disabled {
+    background-color: grey;
+    padding: 0 15px 0 15px;
+    border: solid lightgrey 1px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-radius: 15px;
+}
+
 .technology-icon {
     height: 30px;
     width: 30px;

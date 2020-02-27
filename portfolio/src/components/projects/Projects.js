@@ -30,7 +30,8 @@ class Projects extends Component {
                     icon: "mongodb.png",
                     name: "MongoDB"
                 }
-            ]
+            ],
+            sourceCode: "https://github.com/patrickdowling41/facebook-lite-mongo"
         },
         {
             title: "B+ Tree",
@@ -41,7 +42,9 @@ class Projects extends Component {
                     icon: "java.png",
                     name: "Java"
                 }
-            ]
+            ],
+            sourceCode: "https://github.com/patrickdowling41/bPlusTree"
+            
         },
         {
             title: "Contact form",
@@ -56,7 +59,8 @@ class Projects extends Component {
                     icon: "nodejs.png",
                     name: "NodeJS"
                 }
-            ]
+            ],
+            sourceCode: "https://github.com/patrickdowling41/react-contact-form"
         }
     ]
 
@@ -71,6 +75,8 @@ class Projects extends Component {
                         title={projects.title}
                         icon={projects.icon}
                         techStack={projects.techStack}
+                        sourceCode={projects.sourceCode}
+                        liveDemo={projects.liveDemo}
                         />
                     ))}
                 </div>
