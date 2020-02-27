@@ -99,6 +99,11 @@ $sulpherP: 'Sulphur Point', sans-serif;
     border-radius: 15px;
 }
 
+.tech-icon-container {
+    flex: 1;
+    padding-left: 10%;
+}
+
 .technology-icon {
     height: 30px;
     width: 30px;
@@ -108,8 +113,9 @@ $sulpherP: 'Sulphur Point', sans-serif;
     color: white;
     font-size: 20pt;
     font-family: $sulpherP;
+    flex: 6;
 }
 
 .technology-container {
-    padding-left: 10%;
+    display: flex;
 }

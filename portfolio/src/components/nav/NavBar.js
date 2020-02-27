@@ -61,7 +61,7 @@ class Nav extends Component {
                             smooth={true}
                             offset={-65}
                         >
-                            <FontAwesome size='2x' className="home-icon" name="code" />
+                            <FontAwesome size='1x' className="home-icon" name="code" />
                         </Link>
                     </ul>
             

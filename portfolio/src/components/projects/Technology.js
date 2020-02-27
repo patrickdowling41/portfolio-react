@@ -13,16 +13,12 @@ class Technology extends Component {
     render() {
         return (
             <>
-                <div className="container">
-                    <div className="row technology-container ">
-                        <div className="col-xs-2">
+                    <div className="technology-container">
+                        <div className="tech-icon-container">
                             <img className="technology-icon" src={"/images/" + this.state.icon} alt="technology-icon"/>
                         </div>
-                        <div className="col-lg-10">
-                            <h3 className="technology-name">{this.state.name}</h3>
-                        </div>
+                        <h3 className="technology-name">{this.state.name}</h3>
                     </div>
-                </div>
             </>
         );
     }
