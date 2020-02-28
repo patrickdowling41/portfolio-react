@@ -1,29 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-$ambgColour: #242424; 
-$contact-bg: #181818;
+$aboutMeBGColour: #242424; 
 
 .home-component
 {
     min-height: 100vh;
     max-width: 100vw;
 }
-
-.component {
-    margin:0;
-    padding:0;
-    display: flex;
-}
-
 .about-me-component {
-    background-color: $ambgColour;
-}
-
-.contact-me-component {
-    background-color: $contact-bg;
+    background-color: $aboutMeBGColour;
 }
 
 .projects-component {
     background-color: #0d0d0d;
+    min-height: 93vh;
 }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './nav.scss'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+var FontAwesome = require('react-fontawesome')
 
 class Nav extends Component {
 
@@ -12,8 +13,7 @@ class Nav extends Component {
             /* nav state options:
             ** scrolled (the sticky nav for once scrolling has begun)
             ** top (the opaque nav at the top) */
-            navState: 'top',
-            selectedValue: ""
+            navState: 'top'
         }
 
         this.componentDidMount = this.componentDidMount.bind(this)
@@ -35,7 +35,6 @@ class Nav extends Component {
         this.setState({
             scrollHeight: window.scrollY
         })
-        console.log(this.state.navState)
     }
 
     componentDidMount()
@@ -54,49 +53,39 @@ class Nav extends Component {
     render() {
         return (
             <div className={"nav-" + this.state.navState}>
-
-                <div className="image-container">
-
-                </div>
-
                 <div className="links-container">
-                    <div className={"nav-container " + `${this.state.selectedValue === "about-me" ? "selected" : "not-selected"}`}>
-                        <ul>
-                            <Link
-                                activeClass="active"
-                                to="about-me-component"
-                                smooth={true}
-                                offset={-70}
-                            >
-                                About me
-                            </Link>
-                        </ul>
-                    </div>
-                    <div className={"nav-container " + `${this.state.selectedValue === "projects" ? "selected" : "not-selected"}`}>
-                        <ul>
-                            <Link
-                                activeClass="active"
-                                to="projects-component"
-                                smooth={true}
-                                offset={-70}
-                            >
-                                Projects
-                            </Link>
-                        </ul>
-                    </div>
-                    <div className={"nav-container " + `${this.state.selectedValue === "contact-me" ? "selected" : "not-selected"}`}>
-                        <ul>
-                            <Link
-                                activeClass="active"
-                                to="contact-me-component"
-                                smooth={true}
-                                offset={-70}
-                            >
-                                Contact me
-                            </Link>
-                        </ul>
-                    </div>
-                </div>
+                    <ul>
+                        <Link
+                            activeClass="active"
+                            to="home-component"
+                            smooth={true}
+                            offset={-65}
+                        >
+                            <FontAwesome size='1x' className="home-icon" name="code" />
+                        </Link>
+                    </ul>
+            
+                    <ul>
+                        <Link
+                            activeClass="active"
+                            to="about-me-component"
+                            smooth={true}
+                            offset={-65}
+                        >
+                            About me
+                        </Link>
+                    </ul>
+                    <ul>
+                        <Link
+                            activeClass="active"
+                            to="projects-component"
+                            smooth={true}
+                            offset={-65}
+                        >
+                            Projects
+                        </Link>
+                    </ul>
+                </div>               
             </div>
         )
     }
