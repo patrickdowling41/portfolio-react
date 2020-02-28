@@ -1,0 +1,43 @@
+$brandingGreen: #4DB33D;
+$amMarginVal: 2% 10% 2% 10%;
+
+.amBody {
+    color: white;
+    font-size: 20pt;
+    font-family: 'Sulphur Point', sans-serif;
+    padding: 10% 0 2% 0;
+}
+
+.amLinks {
+    color: white;
+    font-size: 16pt;
+    font-family: 'Sulphur Point', sans-serif;
+    padding: 0 0 0 0;
+    
+    &:hover {
+        text-decoration: none;
+        color: $brandingGreen;
+        transition-duration: 0.3s;
+    }
+}
+
+.mongo-logo
+{
+    margin: 15% 0 10% 10vw;
+    height:250px;
+    width:250px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .mongo-logo
+    {
+        margin: 10% 0 10% 30%;
+        height:200px;
+        width:200px;
+    }
+    .amLinks {
+        text-align: center;
+    }
+
+}

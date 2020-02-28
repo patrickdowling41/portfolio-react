@@ -1,0 +1,128 @@
+$project-bg: #2F2F2F;
+$brandingGreen: #4DB33D;
+$text-color: #8E8E8E;
+$brandingGreenOpaque: rgba(67,153,52,0.7);
+$sulpherP: 'Sulphur Point', sans-serif;
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+#projects-header {
+    text-align: center;
+    color: white;
+    font-size: 28pt;
+    font-family: $sulpherP;
+    padding: 3% 0 3% 0;
+}
+
+.single-project-component
+{
+    background-color: $project-bg;
+    min-height: 65vh;
+    min-width: 400px;
+    max-width: 400px;
+    flex:1;
+    flex-wrap: wrap;
+    margin: 0 0.2vw 0.6vh 0.2vw;
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.logo-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.project-title {
+    text-align: center;
+    color: white;
+    font-size: 28pt;
+    font-family: $sulpherP;
+    padding: 5% 0 5% 0;
+}
+
+.project-description {
+    margin: 0 10% 5% 10%;
+    color: white;
+    font-size: 14pt;
+    font-family: $sulpherP;
+}
+
+.project-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.project-source-code {
+    position: absolute;
+    bottom:20px;
+    right: 30px;
+    color: white;
+}
+
+.project-live-demo {
+    position: absolute;
+    bottom:20px;
+    left: 30px;
+    color: white;
+}
+
+.project-button {
+    background-color: transparent;
+    padding: 0 15px 0 15px;
+    border: solid $brandingGreen 1px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-radius: 15px;
+
+    &:hover {
+        transition-duration: 0.5s;
+        background-color: $brandingGreen;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+.project-button-disabled {
+    background-color: grey;
+    padding: 0 15px 0 15px;
+    border: solid lightgrey 1px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-radius: 15px;
+    padding-top: 0;
+    pointer-events: none;
+}
+
+.project-content {
+    padding-bottom: 100px;
+}
+
+.tech-icon-container {
+    flex: 1;
+    padding-left: 10%;
+}
+
+.technology-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.technology-name {
+    color: white;
+    font-size: 20pt;
+    font-family: $sulpherP;
+    flex: 6;
+}
+
+.technology-container {
+    display: flex;
+}

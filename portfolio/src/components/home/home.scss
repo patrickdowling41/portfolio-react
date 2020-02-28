@@ -1,0 +1,42 @@
+$brandingGreen: #4DB33D;
+
+.home-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/images/landscape-4637538_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+}
+
+h1.homeHeading {
+    font-family: 'Sulphur Point', sans-serif;
+    color: white;
+    font-size: 64px;
+    margin: 0;
+}
+
+h2.homeTitle {
+    font-family: 'Sulphur Point', sans-serif;
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+.sm-icon {
+    color: white;
+    padding-left: 1vw;
+    margin-top: 3vh;
+    &:hover {
+        color: $brandingGreen;
+        transition-duration: 0.25s;
+        cursor: pointer;
+    }
+}
