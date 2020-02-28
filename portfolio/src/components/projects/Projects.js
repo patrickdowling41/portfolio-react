@@ -15,7 +15,7 @@ class Projects extends Component {
     currentProjects = [
         {
             title: "Facebook-Lite",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis augue mi, at tristique erat fringilla et. Sed vel ipsum purus. Pellentesque malesuada lacus at consectetur gravida. Vivamus eu vulputate sem.",
+            description: "Facebook-lite is a web based database application which acts as a very stripped down version of Facebook. I created it as part of a University assignment and subsequently expanded upon it to improve my front end development.",
             icon: "facebook-logo.png",
             techStack: [
                 {
@@ -35,7 +35,7 @@ class Projects extends Component {
         },
         {
             title: "B+ Tree",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis augue mi, at tristique erat fringilla et. Sed vel ipsum purus. Pellentesque malesuada lacus at consectetur gravida. Vivamus eu vulputate sem.",
+            description: "The B+ tree is a complex data structure used heavily in database systems. It is used to store data allowing for efficient retrieval from within large datasets.",
             icon: "binary_tree.png",
             techStack: [
                 {
@@ -48,7 +48,7 @@ class Projects extends Component {
         },
         {
             title: "Contact form",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis augue mi, at tristique erat fringilla et. Sed vel ipsum purus. Pellentesque malesuada lacus at consectetur gravida. Vivamus eu vulputate sem.",
+            description: "The contact form is a simple contact form that makes use of Amazon's Simple Email Service to send contact information by email from a professional noreply email address.",
             icon: "email.png",
             techStack: [
                 {

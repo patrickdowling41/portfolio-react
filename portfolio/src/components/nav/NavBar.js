@@ -57,7 +57,7 @@ class Nav extends Component {
                     <ul>
                         <Link
                             activeClass="active"
-                            to="about-me-component"
+                            to="home-component"
                             smooth={true}
                             offset={-65}
                         >
