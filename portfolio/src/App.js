@@ -9,10 +9,6 @@ import './bootstrap.css'
 
 // This class is responsible for containing all other components.
 class App extends Component {
-    constructor()
-    {
-        super()
-    }
 
     render() {
         return (

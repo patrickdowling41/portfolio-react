@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './nav.scss'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 var FontAwesome = require('react-fontawesome')
 
 class Nav extends Component {

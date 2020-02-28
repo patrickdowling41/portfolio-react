@@ -23,14 +23,14 @@ class Projects extends Component {
         if (this.state.liveDemo === undefined) {
             return (
                 <div className="project-live-demo">
-                    <a class="project-button-disabled" disabled role="button">Live demo</a>
+                    <a className="project-button-disabled" href={this.state.liveDemo}>Live demo</a>
                 </div>
             )
         }
-        else {  
+        else {
             return (
                 <div className="project-live-demo">
-                    <a class="project-button" href={this.state.liveDemo} role="button">Live demo</a>
+                    <a className="project-button" href={this.state.liveDemo} role="button">Live demo</a>
                 </div>
             )
         }
@@ -40,15 +40,14 @@ class Projects extends Component {
         if (this.state.sourceCode === undefined) {
             return (
                 <div className="project-source-code">
-                    <a class="project-button-disabled" disabled role="button">View source</a>
+                    <a className="project-button-disabled" href={this.state.sourceCode}>View source</a>
                 </div>
             )
         }
         else {
-            console.log(this.state.sourceCode)
             return (
                 <div className="project-source-code">
-                    <a class="project-button" href={this.state.sourceCode} role="button">View source</a>
+                    <a className="project-button" href={this.state.sourceCode} role="button">View source</a>
                 </div>
             )
         }
