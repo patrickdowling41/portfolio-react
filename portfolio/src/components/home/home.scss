@@ -1,19 +1,25 @@
 $brandingGreen: #4DB33D;
 
 .home-container {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     position: absolute;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/images/landscape-4637538_1920.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/images/background-standard-def.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     display: flex;
+}
+
+@media only screen and (min-width: 1921px) {
+    .home-container {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/images/background-high-res.jpg');
+    }
 }
 
 h1.homeHeading {
