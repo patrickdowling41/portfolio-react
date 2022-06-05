@@ -15,7 +15,7 @@ class AboutMe extends Component {
                             <div>I am very passionate about developing quality products and learning new and innovative ways to solve business problems.</div>
                             </p>
                             <div style={{marginBottom:'5vh'}}>
-                                <a href="/PatrickDowlingResume.pdf" className="amLinks">> Download my resume</a>
+                                <a href="/PatrickDowlingResume.pdf" className="amLinks">&gt; Download my resume</a>
                             </div>
                         </div>
                         <div className="col-lg-6">
