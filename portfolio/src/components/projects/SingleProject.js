@@ -12,28 +12,9 @@ class Projects extends Component {
             title: this.props.title,
             description: this.props.description,
             techStack: this.props.techStack,
-            sourceCode: this.props.sourceCode,
-            liveDemo: this.props.liveDemo
+            sourceCode: this.props.sourceCode
         }
         this.getSourceCode = this.getSourceCode.bind(this)
-        this.getLiveDemo = this.getLiveDemo.bind(this)
-    }
-
-    getLiveDemo() {
-        if (this.state.liveDemo === undefined) {
-            return (
-                <div className="project-live-demo">
-                    <a className="project-button-disabled" href={this.state.liveDemo}>Live demo</a>
-                </div>
-            )
-        }
-        else {
-            return (
-                <div className="project-live-demo">
-                    <a className="project-button" href={this.state.liveDemo} role="button">Live demo</a>
-                </div>
-            )
-        }
     }
 
     getSourceCode() {
@@ -58,7 +39,7 @@ class Projects extends Component {
             <div className="single-project-component">
                 <div className="logo-container">
                     <img className="project-icon" src={"/images/" + this.state.icon} alt="project-icon"/>
-                </div> 
+                </div>
                 <h2 className="project-title">{this.state.title}</h2>
                 <div className="project-description">{this.state.description}</div>
                 <div className="project-techstack">
@@ -70,7 +51,6 @@ class Projects extends Component {
                     ))}
                 </div>
                 {this.getSourceCode()}
-                {this.getLiveDemo()}
             </div>
         )
     }

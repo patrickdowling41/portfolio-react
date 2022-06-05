@@ -44,7 +44,7 @@ class Projects extends Component {
                 }
             ],
             sourceCode: "https://github.com/patrickdowling41/bPlusTree"
-            
+
         },
         {
             title: "Contact form",
@@ -76,7 +76,6 @@ class Projects extends Component {
                         icon={projects.icon}
                         techStack={projects.techStack}
                         sourceCode={projects.sourceCode}
-                        liveDemo={projects.liveDemo}
                         />
                     ))}
                 </div>

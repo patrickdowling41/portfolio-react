@@ -1,4 +1,4 @@
-$navColour: #333333; 
+$navColour: #333333;
 $brandingGreen: #4DB33D;
 
 * {
@@ -13,7 +13,7 @@ $brandingGreen: #4DB33D;
     position: absolute;
     width: 100vw;
     padding-top: 8vh;
-    z-index: 500; 
+    z-index: 500;
 }
 
 // This is the nav used when user scrolls up from anywhere below the top of the screen.
@@ -26,6 +26,7 @@ $brandingGreen: #4DB33D;
     padding-top: 2vh;
     width: 100vw;
     z-index: 500;
+    transition: all ease-in-out 300ms;
 }
 
 .container-selected {

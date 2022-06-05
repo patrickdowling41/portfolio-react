@@ -9,9 +9,9 @@ class AboutMe extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <p className="amBody"> 
+                            <p className="amBody">
                             <div>Hi I'm Patrick, </div>
-                            <div>I am a graduate Software Engineer currently residing in Melbourne, Australia. </div>
+                            <div>I am a Software Engineer currently residing in Melbourne, Australia. </div>
                             <div>I am very passionate about developing quality products and learning new and innovative ways to solve business problems.</div>
                             </p>
                             <div style={{marginBottom:'5vh'}}>
@@ -19,7 +19,7 @@ class AboutMe extends Component {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <img className="mongo-logo" src="/images/mongo-logo.png" alt="mongo-logo"/> 
+                            <img className="mongo-logo" src="/images/mongo-logo.png" alt="mongo-logo"/>
                         </div>
                     </div>
                 </div>
